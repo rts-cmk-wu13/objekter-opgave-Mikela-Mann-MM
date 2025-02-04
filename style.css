@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ===============
-   Global Styles
+    Global Styles
 =============== */
 
 * {
@@ -62,11 +62,18 @@ p {
     color: #F78065;
 }
 
+/* ===============
+   HERO
+=============== */
+
 .hero.img {
     height: 41rem; 
+    margin-top: 0;
 }
 
-
+/* ===============
+   SERVICES
+=============== */
 
 .service img{
     height: 11rem;
@@ -79,7 +86,20 @@ p {
 
 .services {
     display: flex;
-    margin-top: 8rem;
-    margin-bottom: 15rem;
 }
 
+/* ===============
+   FACILITIES
+=============== */
+
+/* ===============
+   SITES
+=============== */
+
+/* ===============
+   ADVANTAGES
+=============== */
+
+/* ===============
+   FOOTER
+=============== */
