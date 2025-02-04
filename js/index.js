@@ -13,8 +13,15 @@ function createHeroSection(hero) {
     img.alt = "Hero image";
     
     let h1 = document.createElement("h1");
-    h1.textContent = hero.headline;
     
+    // Erstat "save your time" med et span for at ændre farven
+    hero.headline = hero.headline.replace(
+        "save your time",
+        '<span style="color: #F78065;">save your time</span>'
+    );
+    
+    h1.innerHTML = hero.headline; 
+
     let p = document.createElement("p");
     p.textContent = hero.copy;
     
@@ -29,6 +36,7 @@ function createHeroSection(hero) {
     
     document.body.appendChild(section);
 }
+
 
 // Opretter en service-sektion dynamisk
 function createServiceSection(services) {
@@ -45,6 +53,7 @@ function createServiceSection(services) {
         
         let h2 = document.createElement("h2");
         h2.textContent = service.headline;
+        h2.classList.add("service_h2");
         
         let p = document.createElement("p");
         p.textContent = service.text;
