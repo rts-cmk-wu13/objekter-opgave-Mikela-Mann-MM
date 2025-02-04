@@ -20,7 +20,7 @@ img {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: "Merriweather", sans-serif;
     background-color: #fff;
     width: 1440px;
@@ -28,6 +28,9 @@ body {
 
 /* fonts */
 
+h1 {
+    font-size: 39px;
+}
 
 h2 {
     font-size: 36px;
@@ -62,6 +65,11 @@ p {
     color: #F78065;
 }
 
+.icon {
+    width: 2rem;
+    height: auto;   
+   }
+
 /* ===============
    HERO
 =============== */
@@ -69,6 +77,44 @@ p {
 .hero.img {
     height: 41rem; 
     margin-top: 0;
+}
+
+.hero_p {
+    font-size: 20px;
+}
+
+.hero-content {
+   -width: 46rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-button {
+    background-color: #F78065;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #d66750;
 }
 
 /* ===============
@@ -92,13 +138,20 @@ p {
    FACILITIES
 =============== */
 
+
+
 /* ===============
    SITES
 =============== */
 
+.site_img {
+    width: 14.4rem; 
+}
+
 /* ===============
    ADVANTAGES
 =============== */
+
 
 /* ===============
    FOOTER
