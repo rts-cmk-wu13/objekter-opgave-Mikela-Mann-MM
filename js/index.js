@@ -29,18 +29,22 @@ function createHeroSection(hero) {
     let buttonDiv = document.createElement("div");
     buttonDiv.classList.add("hero_button_content");
 
-    let button = document.createElement("button");
+    let button = document.createElement("a");
     button.textContent = "Explore";
     button.classList.add("hero_button");
 
-    let icon = document.createElement("div");
+    button.innerHTML = `
+    <button>${hero.icon, "Explore"}</button>
+    `
+
+    let icon = document.createElement("img");
     icon.src = hero.icon;
     icon.alt = "Hero icon";
     icon.classList.add("icon");
 
     // Tilføj elementer til buttonDiv
     buttonDiv.appendChild(icon);
-
+    buttonDiv.appendChild(button);
 
     // Tilføj elementer til contentDiv
     contentDiv.appendChild(h1);
@@ -48,7 +52,7 @@ function createHeroSection(hero) {
     contentDiv.appendChild(button);
 
     section.appendChild(img);
-    
+    section.appendChild(contentDiv);
 
     document.body.appendChild(section);
 }
