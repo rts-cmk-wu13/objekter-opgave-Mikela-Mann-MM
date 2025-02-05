@@ -1,5 +1,5 @@
 // Udskriver alle overskrifter i services i konsollen
-services.forEach((service) => console.log(service.headline));
+// services.forEach((service) => console.log(service.headline));
 
 // Opretter en hero-section dynamisk
 function createHeroSection(hero) {
@@ -26,25 +26,13 @@ function createHeroSection(hero) {
     p.textContent = hero.copy;
     p.classList.add("hero_p");
 
-    let buttonDiv = document.createElement("div");
-    buttonDiv.classList.add("hero_button_content");
-
     let button = document.createElement("a");
-    button.textContent = "Explore";
     button.classList.add("hero_button");
 
     button.innerHTML = `
-    <button>${hero.icon, "Explore"}</button>
-    `
+    <img src="${hero.icon}" class="icon" alt="Hero icon" /> Explore
+`;
 
-    let icon = document.createElement("img");
-    icon.src = hero.icon;
-    icon.alt = "Hero icon";
-    icon.classList.add("icon");
-
-    // Tilføj elementer til buttonDiv
-    buttonDiv.appendChild(icon);
-    buttonDiv.appendChild(button);
 
     // Tilføj elementer til contentDiv
     contentDiv.appendChild(h1);
@@ -70,16 +58,18 @@ function createServiceSection(services) {
         img.src = service.illustration;
         img.alt = "Service illustration";
 
-        let h2 = document.createElement("h2");
+        let h2 = document.createElement("h3");
         h2.textContent = service.headline;
-        h2.classList.add("service_h2");
+        h2.classList.add("service_h3");
 
         let p = document.createElement("p");
         p.textContent = service.text;
+        p.classList.add("service_text");
 
         let a = document.createElement("a");
         a.href = "#";
         a.textContent = service.linktext;
+        a.classList.add("service_linktext");
 
         article.appendChild(img);
         article.appendChild(h2);
@@ -98,7 +88,7 @@ function createFacilitySection(facilities) {
     section.classList.add("facilities");
 
     let headline = document.createElement("h2");
-    headline.classList.add("facility_headline");
+    headline.classList.add("facility_headline", "facilities_h2");
     headline.textContent = facilities.headline;
 
     section.append(headline);
@@ -107,14 +97,17 @@ function createFacilitySection(facilities) {
         let article = document.createElement("article");
         article.classList.add("facility");
 
+        let contentDiv = document.createElement("div");
+        contentDiv.classList.add("facility-content"); // 
+
         let img = document.createElement("img");
         img.src = option.icon;
         img.alt = "Facility icon";
-        img.classList.add("icon");
+        img.classList.add("icon", "facility_icon");
 
-        let h2 = document.createElement("h2");
-        h2.textContent = option.headline;
-        h2.classList.add("facility_h2");
+        let h3 = document.createElement("h3");
+        h3.textContent = option.headline;
+        h3.classList.add("facility_h3");
 
         let p = document.createElement("p");
         p.textContent = option.text;
@@ -122,11 +115,13 @@ function createFacilitySection(facilities) {
         let a = document.createElement("a");
         a.href = "#";
         a.textContent = option.linktext;
+        a.classList.add("facility_linktext");
 
-        article.appendChild(img);
-        article.appendChild(h2);
-        article.appendChild(p);
-        article.appendChild(a);
+        // Tilføj elementerne til contentDiv
+        contentDiv.append(img, h3, p, a);
+
+        // Tilføj contentDiv til article
+        article.appendChild(contentDiv);
 
         section.appendChild(article);
     });
@@ -190,9 +185,9 @@ function createAdvantagesSection(advantages) {
         img.alt = "Advantage icons";
         img.classList.add("icon");
 
-        let h2 = document.createElement("h2");
-        h2.textContent = advantages.headline;
-        h2.classList.add("service_h2");
+        let h3 = document.createElement("h3");
+        h3.textContent = advantage.headline;
+        h3.classList.add("advantages_h3");
 
         let p = document.createElement("p");
         p.textContent = advantage.text;
@@ -202,7 +197,7 @@ function createAdvantagesSection(advantages) {
         a.textContent = advantage.linktext;
 
         article.appendChild(img);
-        article.appendChild(h2);
+        article.appendChild(h3);
         article.appendChild(p);
         article.appendChild(a);
 
@@ -211,6 +206,7 @@ function createAdvantagesSection(advantages) {
 
     document.body.appendChild(section);
 }
+
 
 // Kald funktionerne for at generere indholdet
 document.addEventListener("DOMContentLoaded", function () {

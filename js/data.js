@@ -34,22 +34,26 @@ let facilities = {
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/list-check.png",
             headline: "Choose the type of stop",
-            text: "Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping"
+            text: "Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping",
+            linktext: "Show me more",
         },
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/spellcheck.png",
             headline: "Describe your structure",
-            text: "Describe thee property, location and nearby attractions"
+            text: "Describe thee property, location and nearby attractions",
+            linktext: "Show me more",
         },
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Text-Frame-Add.png",
             headline: "Build your showcase",
-            text: "Add photos, videos and descriptions Define the price of each type of that make your propety truly"
+            text: "Add photos, videos and descriptions Define the price of each type of that make your propety truly",
+            linktext: "Show me more",
         },
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Calendar-Today.png",
             headline: "Prices and Availability",
-            text: "pitch and configure the availablity calendar."
+            text: "pitch and configure the availablity calendar.",
+            linktext: "Show me more",
         },
     ]
 }
@@ -77,7 +81,9 @@ let sites = {
     ]
 }
 
-let advantages = [
+let advantages = {
+        headline: "Our Advantages",
+        offers: [
     {
         icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
         headline: "Convenience and Transparency",
@@ -94,6 +100,7 @@ let advantages = [
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
 ]
+}
 
 // Opret dit dataobjekt til footerens indhold herunder
 let footer = [

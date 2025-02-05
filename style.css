@@ -11,7 +11,6 @@
     box-sizing: border-box;  
 }
 
-
 img {
     width: 100%;
     max-width: 100%;
@@ -67,7 +66,7 @@ p {
 
 .icon {
     width: 2rem;
-    height: auto;   
+    height: 2rem;   
    }
 
 /* ===============
@@ -75,12 +74,12 @@ p {
 =============== */
 
 .hero.img {
-    height: 41rem; 
-    margin: 0;
+    height: 41rem;
 }
 
 .hero_p {
     font-size: 20px;
+    margin-top: 29px;
 }
 
 
@@ -104,56 +103,138 @@ p {
     text-align: left;
 }
 
-a {
+.hero_button {
     background-color: #F78065;
+    width: 250px;
     color: white;
     border: none;
-    padding: 21px 77px;
     cursor: pointer;
+    padding: 21px 70px;
     font-size: 18px;
+    font-weight: 700;
     margin-top: 29px;
-    
+    display: flex;
+    gap: 8px;
+
 }
 
-a:hover {
-    background-color: #F78000;;
+
+
+
+.hero_button img {
+    width: 24px;
+    height: 24px;
 }
+
+
+
+
 
 /* ===============
    SERVICES
 =============== */
 
 .service img{
+    margin-top: 399px;
+    margin-bottom: 84px;
     height: 11rem;
     width:  15rem;
 }
 
 .service {
-    width: 33%;
+    width: 386px;
+    margin: 0 auto;
 }
 
 .services {
     display: flex;
+    margin: 119px;
+    gap: 41px;
+}
+
+.service_h3, .service_text {
+    margin-bottom: 1.2rem;
+}
+
+.service_text {
+    color: rgba(0, 0, 0, 0,50);
+}
+
+
+.service_linktext {
+    color: #F78065;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 /* ===============
    FACILITIES
 =============== */
 
+.facility-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.facilities {
+    margin-top: 240px;
+    margin-left: 100px;
+}
+
+.facility {
+    width: 275px;
+    gap: 65px;
+    -margin-left: 46px;
+}
+
+.facility_headline.facilities_h2 {
+    margin-bottom: 108px;
+}
+
+.facility_h3 {
+    margin-bottom: 31px;
+}
+
+.facility_linktext {
+    text-decoration: none;
+    color:#F78065;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.icon.facility_icon {
+    margin-bottom: 64px;
+}
 
 
 /* ===============
    SITES
 =============== */
+.sites {
+    display: flex;
+}
 
 .site_img {
     width: 14.4rem; 
+    height: 418px;
+    margin-top: 263px;
 }
 
 /* ===============
    ADVANTAGES
 =============== */
 
+.advantages {
+    display: flex;
+    margin-bottom: 251px;
+}
+
+.advantage {
+    width: 386px;
+    margin: 0 auto;
+}
 
 /* ===============
    FOOTER
