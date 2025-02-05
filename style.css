@@ -19,10 +19,11 @@ img {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     font-family: "Merriweather", sans-serif;
     background-color: #fff;
-    width: 1440px;
+    width: 100%;
 }
 
 /* fonts */
@@ -75,6 +76,7 @@ p {
 
 .hero.img {
     height: 41rem;
+    margin-top: 0;
 }
 
 .hero_p {
@@ -86,6 +88,8 @@ p {
 .hero {
     position: relative;
     text-align: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .hero-content {
@@ -96,7 +100,7 @@ p {
     box-shadow: 0px 4px 100px 0px;
     padding-top: 96px;
     padding-left: 64px;
-    padding-right: 156px;
+    padding-right: 156px;   
     padding-bottom: 75px;
     margin-left: 63px;
     top: 384px;
@@ -172,28 +176,36 @@ p {
    FACILITIES
 =============== */
 
+.facilities {
+    margin-top: 240px;
+    margin-left: 100px;
+}
+
+.facility-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Giver luft mellem elementerne */
+}
+
 .facility-content {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.facilities {
-    margin-top: 240px;
-    margin-left: 100px;
-}
 
 .facility {
     width: 275px;
     gap: 65px;
-    -margin-left: 46px;
 }
+
 
 .facility_headline.facilities_h2 {
     margin-bottom: 108px;
 }
 
 .facility_h3 {
+    font-size: 22px;
     margin-bottom: 31px;
 }
 
@@ -202,6 +214,7 @@ p {
     color:#F78065;
     font-size: 18px;
     font-weight: 700;
+    -margin-top: auto;
 }
 
 .icon.facility_icon {
@@ -214,12 +227,60 @@ p {
 =============== */
 .sites {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 49px;
+    margin-top: 263px;
+    margin-bottom: 232px;
+}
+
+.sites-content {
+    width: 325px;
+    margin-right: 78px;
 }
 
 .site_img {
     width: 14.4rem; 
     height: 418px;
-    margin-top: 263px;
+}
+
+.sites_h2 {
+    margin-bottom: 1rem;
+}
+
+.sites_p {
+    opacity: 0.5;
+}
+
+.sites_button {
+    background-color: #F78065;
+    width: 250px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 70px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 29px;
+    display: flex;
+    gap: 8px;
+
+}
+
+.site_h3 {
+    margin: 1rem 0;
+}
+
+.site_p {
+    color: #3F3D56;
+    margin: 1rem 0;
+    
+}
+
+.site_linktext {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F78065;
 }
 
 /* ===============

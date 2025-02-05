@@ -66,20 +66,24 @@ let sites = {
         {
             img: "https://dazzling-squirrel-77a63d.netlify.app/imgs/lucciano.png",
             name: "Lucciano",
-            city: "Rome"
+            city: "Rome",
+            linktext: "View the Site"
         },
         {
             img: "https://dazzling-squirrel-77a63d.netlify.app/imgs/cremonesi.png",
             name: "Cremonesi",
-            city: "Florence"
+            city: "Florence",
+            linktext: "View the Site"
         },
         {
             img: "https://dazzling-squirrel-77a63d.netlify.app/imgs/beneventi.png",
             name: "Beneventi",
-            city: "Venice"
+            city: "Venice",
+            linktext: "View the Site"
         },
     ]
 }
+
 
 let advantages = {
         headline: "Our Advantages",
