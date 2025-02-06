@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===============
+    Global Styles
+=============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", sans-serif;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* fonts */
+
+h1 {
+    font-size: 39px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0,50); 
+}
+
+.peach {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #F78065;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;   
+   }
+
+/* ===============
+   HERO
+=============== */
+
+.hero.img {
+    height: 41rem;
+    margin-top: 0;
+}
+
+.hero_p {
+    font-size: 20px;
+    margin-top: 29px;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hero-content {
+    position: absolute;
+    width: 741px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 4px 100px 0px;
+    padding-top: 96px;
+    padding-left: 64px;
+    padding-right: 156px;   
+    padding-bottom: 75px;
+    margin-left: 63px;
+    top: 384px;
+    text-align: left;
+}
+
+.hero_button {
+    background-color: #F78065;
+    width: 250px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 21px 70px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 29px;
+    display: flex;
+    gap: 8px;
+
+}
+
+
+
+
+.hero_button img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+/* ===============
+   SERVICES
+=============== */
+
+.service img{
+    margin-top: 399px;
+    margin-bottom: 84px;
+    height: 11rem;
+    width:  15rem;
+}
+
+.service {
+    width: 386px;
+    margin: 0 auto;
+}
+
+.services {
+    display: flex;
+    margin: 119px;
+    gap: 41px;
+}
+
+.service_h3, .service_text {
+    margin-bottom: 1.2rem;
+}
+
+.service_text {
+    color: rgba(0, 0, 0, 0,50);
+}
+
+
+.service_linktext {
+    color: #F78065;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ===============
+   FACILITIES
+=============== */
+
+.facilities {
+    margin-top: 240px;
+    margin-left: 100px;
+}
+
+.facility-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Giver luft mellem elementerne */
+}
+
+.facility-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.facility {
+    width: 275px;
+    gap: 65px;
+}
+
+
+.facility_headline.facilities_h2 {
+    margin-bottom: 108px;
+}
+
+.facility_h3 {
+    font-size: 22px;
+    margin-bottom: 31px;
+}
+
+.facility_linktext {
+    text-decoration: none;
+    color:#F78065;
+    font-size: 18px;
+    font-weight: 700;
+    -margin-top: auto;
+}
+
+.icon.facility_icon {
+    margin-bottom: 64px;
+}
+
+
+/* ===============
+   SITES
+=============== */
+.sites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 49px;
+    margin-top: 263px;
+    margin-bottom: 232px;
+}
+
+.sites-content {
+    width: 325px;
+    margin-right: 78px;
+}
+
+.site_img {
+    width: 14.4rem; 
+    height: 418px;
+}
+
+.sites_h2 {
+    margin-bottom: 1rem;
+}
+
+.sites_p {
+    opacity: 0.5;
+}
+
+.sites_button {
+    background-color: #F78065;
+    width: 250px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px 70px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 29px;
+    display: flex;
+    gap: 8px;
+
+}
+
+.site_h3 {
+    margin: 1rem 0;
+}
+
+.site_p {
+    color: #3F3D56;
+    margin: 1rem 0;
+    
+}
+
+.site_linktext {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F78065;
+}
+
+/* ===============
+   ADVANTAGES
+=============== */
+
+.advantages {
+    display: flex;
+    margin-bottom: 251px;
+}
+
+.advantage {
+    width: 386px;
+    margin: 0 auto;
+}
+
+/* ===============
+   FOOTER
+=============== */
